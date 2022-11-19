@@ -4,50 +4,49 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTextStyle {
   AppTextStyle._();
 
-  static TextStyle header1 = GoogleFonts.dmSans(
+  static TextStyle heading1 = GoogleFonts.dmSans(
     fontSize: 48,
     fontWeight: FontWeight.bold,
   );
-  static TextStyle header2 = GoogleFonts.montserrat(
-    fontSize: 20,
-    fontWeight: FontWeight.w700,
-  );
-  static TextStyle body = GoogleFonts.montserrat(
-    fontSize: 12,
-    fontWeight: FontWeight.w600,
-  );
-  static TextStyle headline1 = GoogleFonts.montserrat(
+
+  static TextStyle heading2 = GoogleFonts.dmSans(
     fontSize: 32,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.bold,
   );
-  static TextStyle headlineOnBoarding = GoogleFonts.montserrat(
-    fontSize: 18,
-    fontWeight: FontWeight.w600,
+  static TextStyle heading3 = GoogleFonts.dmSans(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
   );
-  static TextStyle body1 = GoogleFonts.montserrat(
-    fontSize: 14,
-    fontWeight: FontWeight.w600,
-  );
-  static TextStyle headlineB = GoogleFonts.montserrat(
-    fontSize: 22,
-    fontWeight: FontWeight.w600,
-  );
-  static TextStyle headlineB2 = GoogleFonts.montserrat(
-    fontSize: 20,
-    fontWeight: FontWeight.w600,
-  );
-  static TextStyle body3 = GoogleFonts.montserrat(
+  static TextStyle heading4 = GoogleFonts.dmSans(
     fontSize: 18,
     fontWeight: FontWeight.w500,
   );
-  static TextStyle body4 = GoogleFonts.poppins(
-    fontSize: 10,
-    fontWeight: FontWeight.w400,
-  );
-  static TextStyle candidateAbout = GoogleFonts.dosis(
+  static TextStyle heading5 = GoogleFonts.dmSans(
     fontSize: 16,
     fontWeight: FontWeight.w500,
   );
-
-  ///This is where the different textStyles will be
+  static TextStyle body1 = GoogleFonts.inter(
+    fontSize: 24,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle body2 = GoogleFonts.inter(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle body3 = GoogleFonts.inter(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle body4 = GoogleFonts.inter(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle body5 = GoogleFonts.inter(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle body6 = GoogleFonts.inter(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
 }

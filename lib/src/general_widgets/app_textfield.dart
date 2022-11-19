@@ -32,56 +32,67 @@ class AppTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          labelText,
-          style: AppTextStyle.body5,
-        ),
-        TextFormField(
-          controller: controller,
-          obscureText: obscureText,
-          keyboardType: keyboardType,
-          onFieldSubmitted: onSubmitted,
-          focusNode: focusNode,
-          textInputAction: textInputAction,
-          validator: validator,
-          decoration: InputDecoration(
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(AppDimension.small),
-              borderSide: BorderSide(color: AppColor.kGrayscaleColor.shade200),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(5),
-              borderSide: BorderSide(color: AppColor.kGrayscaleColor.shade100),
-            ),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(5),
-              borderSide: BorderSide(color: AppColor.kGrayscaleColor.shade100),
-            ),
-            errorBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(5),
-              borderSide: BorderSide(
-                  color: AppColor.kGrayErrorColor.shade500,
-                  width: AppDimension.tiny * 0.5),
-            ),
-            hintStyle: AppTextStyle.body5,
-            contentPadding: const EdgeInsets.only(
-                top: 24,
-                bottom: 16,
-                right: AppDimension.big,
-                left: AppDimension.big),
-            fillColor: AppColor.kGrayNeutralColor.shade100,
-            filled: true,
-            hintText: hintText,
-            prefixIcon: prefixIcon,
-            suffixIcon: suffixIcon,
-            prefixIconConstraints: const BoxConstraints(
-              minWidth: 64,
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: AppDimension.large),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppDimension.small),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            labelText,
+            style: AppTextStyle.body5,
+            textAlign: TextAlign.left,
+          ),
+          TextFormField(
+            controller: controller,
+            obscureText: obscureText,
+            keyboardType: keyboardType,
+            onFieldSubmitted: onSubmitted,
+            focusNode: focusNode,
+            textInputAction: textInputAction,
+            validator: validator,
+            decoration: InputDecoration(
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(AppDimension.small),
+                borderSide:
+                    BorderSide(color: AppColor.kGrayscaleColor.shade200),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5),
+                borderSide:
+                    BorderSide(color: AppColor.kGrayscaleColor.shade100),
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5),
+                borderSide:
+                    BorderSide(color: AppColor.kGrayscaleColor.shade100),
+              ),
+              errorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5),
+                borderSide: BorderSide(
+                    color: AppColor.kGrayErrorColor.shade500,
+                    width: AppDimension.tiny * 0.5),
+              ),
+              hintStyle: AppTextStyle.body5,
+              contentPadding: const EdgeInsets.only(
+                  top: 24,
+                  bottom: 16,
+                  right: AppDimension.big,
+                  left: AppDimension.big),
+              fillColor: AppColor.kGrayNeutralColor.shade100,
+              filled: true,
+              hintText: hintText,
+              prefixIcon: prefixIcon,
+              suffixIcon: suffixIcon,
+              prefixIconConstraints: const BoxConstraints(
+                minWidth: 64,
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

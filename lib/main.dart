@@ -16,13 +16,26 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          body: Column(
-            children: [
-              AppTextField(
-                hintText: 'Nmae',
-                labelText: 'labe',
-              ),
-            ],
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('chuuks'),
+                AppTextField(
+                  hintText: 'Nmae',
+                  labelText: 'label',
+                ),
+                AppTextField(
+                  hintText: 'Nmae',
+                  labelText: 'label',
+                ),
+                AppTextField(
+                  hintText: 'Nmae',
+                  labelText: 'label',
+                ),
+                Spacing.smallHeight(),
+              ],
+            ),
           ),
         ));
   }

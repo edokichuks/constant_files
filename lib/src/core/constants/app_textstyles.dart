@@ -4,9 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTextStyle {
   AppTextStyle._();
 
-  static TextStyle header1 = GoogleFonts.workSans(
-    fontSize: 34,
-    fontWeight: FontWeight.w700,
+  static TextStyle header1 = GoogleFonts.dmSans(
+    fontSize: 48,
+    fontWeight: FontWeight.bold,
   );
   static TextStyle header2 = GoogleFonts.montserrat(
     fontSize: 20,

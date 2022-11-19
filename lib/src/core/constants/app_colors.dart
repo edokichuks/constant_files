@@ -5,29 +5,29 @@ class AppColor {
   ///This is a private class and as so all its fields must be made static
   AppColor._();
 
-  static const Color primary = Color(0xFF993399);
-  static const Color primary2 = Color(0xFFD57FFE);
-  static const Color white = Colors.white;
-  static const Color red = Color(0XFFEE4141);
-  static const Color lightGrey = Color(0XFFC8C6C6);
-  static const Color lightBlack1 = Color(0XFF333333);
-  static Color shimColor = Colors.black.withOpacity(0.4);
-  static const Color transperent = Colors.transparent;
-  static Color black = Colors.black.withOpacity(0.95);
-  static const Color lightBlack = Color.fromRGBO(17, 17, 17, 0.94);
-  static const Color lightshadow = Color.fromRGBO(56, 56, 56, 0.44);
-  static const Color borderPin = Color(0xFF3E3E3E);
-  static const Color lightWhite = Color(0xFFF9F9F9);
-  static const Color bottomNavBar = Color(0xFF64078F);
-  static const Color background = Color(0xFFF1F1F1);
-  static const Color profileBackground = Color(0xFFD9D9D9);
-
-  ///social media colors
-  static const Color green = Color(0xFF15E374);
-  static const Color blue = Color(0xFF2558DA);
-  static const Color lightBlue = Color(0xFF6BC4F7);
-  static const Color pink = Color(0xFFC9107F);
-  static const Color deepBlue = Color(0xFF0E76A8);
-  static const Color brown = Color(0xFF4D1D1D);
-  static const Color shadowDrop = Color.fromRGBO(0, 0, 0, 0.2);
+  static const kPrimaryColor = MaterialColor(
+    0XFF8C54BF,
+    {
+      100: Color(0XFFE8DDF2),
+      200: Color(0XFFC5A9DF),
+      300: Color(0XFF9F71CA),
+      400: Color(0XFF8C54BF),
+      500: Color(0XFF5D387F),
+      600: Color(0XFF2F1C40),
+      700: Color(0XFF1C1126),
+    },
+  );
+  static const kSecondaryColor = MaterialColor(
+    0XFF2FB087,
+    {
+      100: Color(0XFFD5EFE7),
+      200: Color(0XFF97D7C3),
+      300: Color(0XFF74CAAF),
+      400: Color(0XFF2FB087),
+      500: Color(0XFF279371),
+      600: Color(0XFF185844),
+      700: Color(0XFF185844),
+      800: Color(0XFF09231B),
+    },
+  );
 }
